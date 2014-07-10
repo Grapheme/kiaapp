@@ -1,0 +1,87 @@
+$alias: "pedals"
+
+article##{$alias}
+
+  .plane.left
+    color: #ffffff
+
+    .infoBlock
+      width: 362px
+      top: 50%
+      left: 50%
+
+      .title
+        height: 40px
+
+  .plane.right
+    color: #ffffff
+    .planeWrapper
+      min-width: 100%
+      position: relative
+
+      .planeBgLayer2
+        background-image: url('../img/pages/normal/pedals_right_2.png')
+
+      .infoBlock
+        width: 362px
+        bottom: 20%
+        left: 36%
+
+
+        .title
+          height: 40px
+
+
+@media (max-width: $minWidth), (max-height: $minHeight)
+  article##{$alias}
+    .plane.left
+      .infoBlock
+        left: 40%
+        .title
+          height: 36px
+
+    .plane.right
+      .planeWrapper
+        .infoBlock
+          left: auto!important
+          right: 12%
+          .title
+            height: 36px
+
+@media screen and (max-width: 1600px)
+  article##{$alias}
+    @include setBackground($alias, #000000, true, true, #14366F)
+
+    .plane.right
+      .planeWrapper
+
+        .infoBlock
+          width: 362px
+          top: 65%
+          left: 40%
+
+@media screen and (max-width: $bigMinWidth), screen and (max-height: $bigMinHeight)
+  article##{$alias}
+    @include setBackground($alias, #000000, true, true, #14366F)
+
+@media screen and (min-width: $bigMinWidth+1) and (min-height: $bigMinHeight+1)
+  article##{$alias}
+    @include setBackgroundBig($alias, #000000, true, true, #14366F)
+
+    .plane.left
+      .infoBlock
+        width: 500px
+        //top: 750px
+        //left: 1250px
+
+        .title
+          height: 40px
+
+    .plane.right
+      .planeWrapper
+        .planeBgLayer2
+          background-image: url('../img/pages/big/pedals_right_2.png')
+        .infoBlock
+          width: 500px
+          top: 65%
+          left: 40%

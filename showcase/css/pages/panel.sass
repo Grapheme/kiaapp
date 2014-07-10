@@ -1,0 +1,82 @@
+$alias: "panel"
+
+article##{$alias}
+  .plane.left
+    color: #ffffff
+
+    .infoBlock
+      width: 362px
+      top: 60%
+      left: 10%
+
+      .title
+        height: 40px
+
+  .plane.right
+    color: #ffffff
+    .planeWrapper
+      min-width: 100%
+      position: relative
+
+      .planeBgLayer2
+        background-image: url('../img/pages/normal/panel_right_2.png')
+
+      .infoBlock
+        width: 362px
+        bottom: 25%
+        left: 5%
+
+
+        .title
+          height: 20px
+
+
+@media (max-width: $minWidth), (max-height: $minHeight)
+  article##{$alias}
+    .plane.left
+      .infoBlock
+        .title
+          height: 36px
+
+    .plane.right
+      .planeWrapper
+        .infoBlock
+          left: 0
+
+          .title
+            height: 18px
+
+@media screen and (max-width: $bigMinWidth)
+  article##{$alias}
+    @include setBackground($alias, #000000, true, true, #000000)
+
+@media (max-width: $minWidth), (max-height: $minHeight)
+  article##{$alias}
+    .plane.right
+      .planeWrapper
+
+        .planeBgLayer2
+          background-image: url('../img/pages/small/panel_right_2.png')
+
+        .infoBlock
+          width: 525px
+          bottom: 20%
+
+@media screen and (min-width: $bigMinWidth+1)
+  article##{$alias}
+    @include setBackgroundBig($alias, #000000, true, true, #000000)
+
+    .plane.left
+      .infoBlock
+        width: 500px
+
+        .title
+          height: 40px
+
+    .plane.right
+      .planeWrapper
+
+        .planeBgLayer2
+          background-image: url('../img/pages/normal/panel_right_2.png')
+        .infoBlock
+          width: 500px

@@ -1,0 +1,88 @@
+$alias: "transmission"
+
+article##{$alias}
+  .plane.left
+    color: #ffffff
+
+    .infoBlock
+      width: 362px
+      top: 15%
+      left: 10%
+
+      .title
+        height: 40px
+
+  .plane.right
+    color: #ffffff
+    .planeWrapper
+      min-width: 100%
+      position: relative
+
+      .planeBgLayer2
+        background-image: url('../img/pages/normal/transmission_right_2.png')
+
+      .infoBlock
+        width: 362px
+        top: 35%
+        left: 50%
+
+
+        .title
+          height: 40px
+
+
+@media (max-width: $minWidth), (max-height: $minHeight)
+  article##{$alias}
+    .plane.left
+      .infoBlock
+        top: 15%
+        .title
+          height: 36px
+
+    .plane.right
+      .planeWrapper
+        .infoBlock
+          .title
+            height: 36px
+
+@media screen and (max-width: $bigMinWidth)
+  article##{$alias}
+    @include setBackground($alias, #000000, true, true, #4A5572)
+
+@media screen and (min-width: $bigMinWidth+1)
+  article##{$alias}
+    @include setBackgroundBig($alias, #000000, true, true, #4A5572)
+
+    .plane.left
+      .infoBlock
+        width: 500px
+        //top: 250px
+        //left: 350px
+
+        .title
+          height: 40px
+
+    .plane.right
+      .planeWrapper
+        .planeBgLayer2
+          background-image: url('../img/pages/big/transmission_right_2.png')
+        .infoBlock
+          width: 500px
+          top: 25%
+          left: 50%
+
+@media (max-width: $minWidth), (max-height: $minHeight)
+  article##{$alias}
+    .plane.right
+      .planeWrapper
+        .planeBg
+          -webkit-background-size: cover !important
+          background-size: cover !important
+
+          .planeBgLayer2
+            -webkit-background-size: cover !important
+            background-size: cover !important
+
+        .infoBlock
+          left: auto
+          right: 5%
