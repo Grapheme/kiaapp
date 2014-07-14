@@ -2968,3 +2968,139 @@ article#about .infoBlock {
     padding-left: 20px; }
   article .slidesArrow .placer {
     margin-top: 400px; } }
+
+
+/* media css for app pages */
+
+@media (max-width: 818px) {
+  body {
+    min-width: 808px;
+  }
+
+  .header .container-head {
+    min-width: 808px;
+  }
+  .header .logo-block {
+    width: 83px;
+    height: 50px;
+  }
+  .header .logo-block .logo {
+    margin: 11px 0 0 28px;
+  }
+  .header .decor-left {
+    width: 80px;
+    height: 50px;
+    background-size: 100% 100%;
+  }
+  .header .decor-top {
+    height: 22px;
+  }
+  .header .decor-right {
+    width: 80px;
+    height: 50px;
+    background-size: 100% 100%;
+  }
+  
+  .navbar-nav {
+    height: 50px;
+  }
+  .navbar-nav .share-block {
+    height: 50px;
+  }
+  .navbar-nav li a {
+    width: 59px;
+    height: 50px;
+  }
+  .navbar-nav li div.social-likes {
+    width: 59px;
+    height: 50px;
+  }
+  .navbar-nav li div.social-likes .shareDiv {
+    height: 50px;
+  }
+  .navbar-nav .video i {
+    margin-top: 17px;
+  }
+  .navbar-nav .video i:after {
+    left: 17px;
+  }
+  .navbar-nav .gear i {
+    margin-top: 15px;
+  }
+  .navbar-nav .gear i:after {
+    left: 16px;
+  }
+  .navbar-nav .doc i {
+    margin-top: 13px;
+  }
+  .navbar-nav .doc i:after {
+    left: 18px;
+  }
+  .navbar-nav .helm i {
+    margin-top: 14px;
+  }
+  .navbar-nav .helm i:after {
+    left: 18px;
+  }
+  .navbar-nav .share i {
+    margin-top: 15px;
+  }
+  .navbar-nav .share i:after {
+    left: 20px;
+  }
+  .navbar-nav .fb i {
+    margin-top: 16px;
+  }
+  .navbar-nav .fb i:after {
+    left: 25px;
+  }
+  .navbar-nav .tw i {
+    margin-top: 18px;
+  }
+  .navbar-nav .tw i:after {
+    left: 18px;
+  }
+  .navbar-nav .vk i {
+    margin-top: 18px;
+  }
+  .navbar-nav .vk i:after {
+    left: 16px;
+  }
+  .navbar-nav .ok i {
+    margin-top: 14px;
+  }
+  .navbar-nav .ok i:after {
+    left: 23px;
+  }
+  .bg .layer2 {
+    left: -30%;
+  }
+  .container {
+    width: 808px;
+  }
+  .container-main {
+    margin-top: 33px;
+  }
+  .info-left {
+    margin-left: 84px;
+  }
+  .info-left h1 {
+    font-size: 48px;
+    line-height: 40px;
+  }
+  .info-left .sub-text {
+    margin-bottom: 22px;
+  }
+  .info-right {
+    max-width: 200px;
+    margin: 0 42px !important;
+  }
+  .info-right .text {
+    font-size: 12px;
+    color: #000;
+    text-shadow: none;
+  }
+  .info-right .text br {
+    display: none;
+  }
+}
